@@ -7,9 +7,20 @@ Node.js® is a JavaScript runtime built on Chrome's V8 JavaScript engine.
 
 --------
 
-## curl install
+## Ubuntu packages upgrade 
 ```
 sudo apt update
+
+sudo apt upgrade
+
+sudo apt autoremove
+
+```
+
+-------------------
+
+## curl install
+```
 
 sudo apt install curl
 
