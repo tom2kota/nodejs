@@ -53,29 +53,35 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 
 command -v nvm
 
-nvm
+nvm ls-remote
 
-nvm install 10
-nvm alias default 10
+nvm install 12
+nvm install node
+nvm alias default 14
+
+nvm ls
+nvm use node
+nvm run node --version
 ```
 
 in a terminal to see if ```n``` is installed on your system. If it’s installed, 
 you can run ```n 10``` to install and use Node.js version 10.
 
+To update npm
+```
+nvm install lts/* --reinstall-packages-from=default --latest-npm
+
+nvm install-latest-npm
 ```
 
+To restore your PATH, you can deactivate it:
+```
+nvm deactivate
 ```
 
-
-
+To set a default Node version to be used in any new shell, use the alias 'default':
 ```
-
-```
-
-
-
-```
-
+nvm alias default node
 ```
 
 
