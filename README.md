@@ -55,12 +55,14 @@ command -v nvm
 
 nvm ls-remote
 
-nvm install 12
+nvm install 12.18.2
 nvm install node
-nvm alias default 14
 
 nvm ls
-nvm use node
+nvm use node 12.18.2
+nvm alias default 12.18.2
+
+node -v
 nvm run node --version
 ```
 
